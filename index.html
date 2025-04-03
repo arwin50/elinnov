@@ -8,11 +8,24 @@
     <title>Prime & Factorial Checker</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Enter A Number</h1>
-      <input type="text" id="numberfield" />
-      <button type="submit" id="checkbutton">Check</button>
-      <p id="result"></p>
+    <h2 id="header">What can I help with?</h2>
+    <div class="output-container">
+      <p id="result" class="invisible"></p>
+      <p id="input" class="invisible"></p>
+    </div>
+    <div class="input-container">
+      <div class="innerInput-container">
+        <input type="text" id="numberfield" placeholder="Enter a number" />
+        <div class="function-bar">
+          <div class="function-container">
+            <button class="functions" id="prime-button">Prime Checker</button>
+            <button class="functions" id="factorial-button">Factorial</button>
+          </div>
+          <button type="submit" id="checkbutton">
+            <img src="assets/arrowUp.png" alt="arrowUp" />
+          </button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
