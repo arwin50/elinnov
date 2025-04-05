@@ -30,7 +30,7 @@ h1 {
   display: flex;
   flex-direction: column;
   margin: 30px 10px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 #input {
   max-width: 650px;
