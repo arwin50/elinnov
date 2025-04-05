@@ -105,6 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //Prevent non-numeric input
     if (!/^-?\d+(\.\d+)?$/.test(inputField.value)) {
+      inputField.value = "";
       resultDisplay.className = "visible";
       typeWriterEffect("Please enter a valid number.", 30);
       return;
