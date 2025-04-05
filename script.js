@@ -90,6 +90,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Event listener for checking number properties
   checkButton.addEventListener("click", () => {
+    inputDisplay.innerHTML = ""; // Hide input display initially
+    inputDisplay.className = "invisible";
     if (inputField.value !== "") {
       inputDisplay.className = "visible";
       inputDisplay.innerHTML = `<strong>${inputField.value}</strong>`;
